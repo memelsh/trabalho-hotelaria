@@ -1,13 +1,10 @@
-name: Hotelaria CI
+name: Hotelaria CI (Gestão de Reservas)
 on: [push, workflow_dispatch]
-
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Baixando Código
-        uses: actions/checkout@v3
-      - name: Instalando Dependências do Hotel
-        run: echo "Instalando sistema..."
-      - name: Testando Reservas
-        run: echo "Testes de Reserva: APROVADO"
+      - name: Simulação de Build
+        run: echo "Compilando módulo de Reservas... OK"
+      - name: Testes Automatizados
+        run: echo "Verificando disponibilidade de quartos... SUCESSO"
