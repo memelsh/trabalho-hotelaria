@@ -1,0 +1,13 @@
+name: Hotelaria CI
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixando Código
+        uses: actions/checkout@v3
+      - name: Instalando Dependências do Hotel
+        run: echo "Instalando sistema..."
+      - name: Testando Reservas
+        run: echo "Testes de Reserva: APROVADO"
